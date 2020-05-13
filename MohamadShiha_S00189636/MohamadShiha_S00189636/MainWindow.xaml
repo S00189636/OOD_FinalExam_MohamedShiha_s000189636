@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MohamadShiha_S00189636"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Exam Phone App" Height="450" Width="800" ResizeMode="CanMinimize">
+
+    <Window.Resources>
+        <DataTemplate x:Key="PhoneListBox">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="{Binding Path=OS_Image}" Margin="2" HorizontalAlignment="Left" FontSize="24" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="0" Grid.Row="1" FontSize="16" Text="{Binding Path=Name}" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid MinWidth="550" Width="550" Height="250">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+
+
+        <ListBox x:Name="Phones" ItemTemplate="{StaticResource ResourceKey= PhoneListBox}"
+                 Grid.Row="1" SelectedValuePath="Price"  SelectionChanged="Phones_SelectionChanged"/>
+        <TextBlock x:Name="PhonePrice" Text="Price:" Grid.Column="1" Grid.Row="0"/>
+        <Image x:Name="PhoneImage" Grid.Row="1" Grid.Column="1"/>
+        
         
     </Grid>
 </Window>

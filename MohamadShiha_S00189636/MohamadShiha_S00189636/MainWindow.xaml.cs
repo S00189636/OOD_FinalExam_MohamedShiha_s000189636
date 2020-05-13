@@ -24,5 +24,10 @@ namespace MohamadShiha_S00189636
         {
             InitializeComponent();
         }
+
+        private void Phones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
