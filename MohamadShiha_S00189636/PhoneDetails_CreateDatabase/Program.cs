@@ -18,8 +18,8 @@ namespace PhoneDetails_CreateDatabase
 
             using (db)
             {
-                Phone p1 = new Phone("Samsung S20", 500, "Android", "/images/android.png", "/images/s20.jpg");
-                Phone p2 = new Phone("iPhone 11", 600, "IOS", "/images/apple.png", "/images/iphone11.jpg");
+                Phone p1 = new Phone(1,"Samsung S20", 500, "Android", "/images/android.png", "/images/s20.jpg");
+                Phone p2 = new Phone(2,"iPhone 11", 600, "IOS", "/images/apple.png", "/images/iphone11.jpg");
 
                 db.Phones.Add(p1);
                 db.Phones.Add(p2);

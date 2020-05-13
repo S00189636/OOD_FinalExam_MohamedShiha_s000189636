@@ -60,6 +60,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MohamadShiha_S00189636\MohamadShiha_S00189636.csproj">
+      <Project>{12f39378-c831-42a8-b024-b6e14abdda4f}</Project>
+      <Name>MohamadShiha_S00189636</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

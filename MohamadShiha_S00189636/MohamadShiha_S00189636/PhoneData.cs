@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace MohamadShiha_S00189636
 {
-    public class PhoneData :DbContext
+    public class PhoneData : DbContext
     {
 
         public PhoneData() : base("MyPhoneData") { }
-        public DbSet<Phone> Phones;
+        public DbSet<Phone> Phones { get; set; }
     }
 }

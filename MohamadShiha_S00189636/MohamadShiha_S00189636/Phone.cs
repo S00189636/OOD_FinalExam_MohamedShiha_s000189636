@@ -15,12 +15,14 @@ namespace MohamadShiha_S00189636
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
 
+
         // used in test project
         public Phone() { }
 
         // will be used to creat the code-first database
-        public Phone(string name,decimal price,string operatingSystem,string oS_Image,string phone_Image) 
+        public Phone(int id ,string name,decimal price,string operatingSystem,string oS_Image,string phone_Image) 
         {
+            ID = id;
             Name = name;
             Price = price;
             OperatingSystem = operatingSystem;

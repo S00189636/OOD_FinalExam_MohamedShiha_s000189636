@@ -13,3 +13,8 @@ C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s0001
 C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\obj\Debug\MohamadShiha_S00189636.csproj.CoreCompileInputs.cache
 C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\obj\Debug\MohamadShiha_S00189636.exe
 C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\obj\Debug\MohamadShiha_S00189636.pdb
+C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\bin\Debug\EntityFramework.dll
+C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\bin\Debug\EntityFramework.xml
+C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC\Documents\GitHub\Fixing the project\OOD_FinalExam_MohamedShiha_s000189636\MohamadShiha_S00189636\MohamadShiha_S00189636\obj\Debug\MohamadShiha_S00189636.csproj.CopyComplete
