@@ -14,5 +14,13 @@ namespace MohamadShiha_S00189636
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
 
+
+
+        public void IncreasePrice(decimal percentage)
+        {
+            if (Price <= 0) return;
+            decimal addedValue = (percentage / Price) * 100;
+            Price += addedValue;
+        }
     }
 }
