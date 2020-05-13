@@ -1,5 +1,6 @@
 ﻿<Window x:Class="MohamadShiha_S00189636.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -16,7 +17,7 @@
         </DataTemplate>
     </Window.Resources>
     <Grid MinWidth="550" Width="550" Height="250">
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -26,12 +27,19 @@
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
 
+        <materialDesign:Card Grid.Row="1" materialDesign:ShadowAssist.ShadowDepth="Depth3">
+            <ListBox x:Name="PhoneslistBox" ItemTemplate="{StaticResource ResourceKey= PhoneListBox}"
+                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                  SelectedValuePath="Price"  SelectionChanged="Phones_SelectionChanged"/>
+        </materialDesign:Card>
+        
+        <materialDesign:Card Grid.Column="1" Grid.Row="0" materialDesign:ShadowAssist.ShadowDepth="Depth4">
+            <TextBlock x:Name="PhonePriceTextBox" Text="Price:" HorizontalAlignment="Center" FontSize="20" />
+        </materialDesign:Card>
+        
+        <materialDesign:Card Grid.Row="1" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth1">
+            <Image x:Name="PhoneImage"  Margin="10"/>
+        </materialDesign:Card>
 
-        <ListBox x:Name="PhoneslistBox" ItemTemplate="{StaticResource ResourceKey= PhoneListBox}"
-                 Grid.Row="1" SelectedValuePath="Price"  SelectionChanged="Phones_SelectionChanged"/>
-        <TextBlock x:Name="PhonePriceTextBox" Text="Price:" Grid.Column="1" Grid.Row="0"/>
-        <Image x:Name="PhoneImage" Grid.Row="1" Grid.Column="1"/>
-        
-        
     </Grid>
 </Window>
