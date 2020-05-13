@@ -18,6 +18,7 @@
     </Window.Resources>
     <Grid MinWidth="550" Width="550" Height="250">
 
+        <!--Create the columns and rows--> 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -26,7 +27,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-
+        <!--Using the Material Design Card giving depth to the list box and other elements-->
         <materialDesign:Card Grid.Row="1" materialDesign:ShadowAssist.ShadowDepth="Depth3">
             <ListBox x:Name="PhoneslistBox" ItemTemplate="{StaticResource ResourceKey= PhoneListBox}"
                  materialDesign:ShadowAssist.ShadowDepth="Depth3"
