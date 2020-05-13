@@ -8,9 +8,7 @@ namespace MohamadShiha_S00189636
 {
     public class Phone
     {
-
-        
-
+        public int ID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string OperatingSystem { get; set; }
@@ -19,6 +17,8 @@ namespace MohamadShiha_S00189636
 
         // used in test project
         public Phone() { }
+
+        // will be used to creat the code-first database
         public Phone(string name,decimal price,string operatingSystem,string oS_Image,string phone_Image) 
         {
             Name = name;
